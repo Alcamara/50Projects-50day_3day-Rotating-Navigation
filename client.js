@@ -3,7 +3,9 @@ $(document).ready(readyNow)
 function readyNow() {
     console.log('test');
 
-    $('#open').on('click', clickHamburger).on('click', menuEvent)
+    $('#open').on('click', clickHamburger);
+    $('#close').on('click', clickX);
+
 }
 
 function clickHamburger() {
@@ -11,7 +13,7 @@ function clickHamburger() {
     $('.container').addClass('show-nav')
 }
 
-function menuEvent() {
-
-    
+function clickX() {
+    $('.container').removeClass('show-nav')
 }
+
